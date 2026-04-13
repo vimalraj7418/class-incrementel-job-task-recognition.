@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickJob | Work & Hire Instantly</title>
+    <meta name="description"
+        content="QuickJob is a premium platform connecting work providers with skilled labour. Simple, beautiful, and efficient.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- FIRST PAGE: Age Verification -->
+        <section id="page-age-verification" class="page active">
+            <div class="auth-container">
+                <div class="glass-card animate-up">
+                    <div class="logo-container mb-4">
+                        <i class="fas fa-briefcase fa-4x"
+                            style="color: var(--primary-bright); margin-bottom: 1rem;"></i>
+                        <h1 style="font-size: 2.5rem; font-weight: 800;">QuickJob</h1>
+                    </div>
+                    <h2 class="mb-2">Verify Your Age</h2>
+                    <p class="hero-subtitle mb-4" style="font-size: 1.1rem; margin-bottom: 2.5rem;">Access to this
+                        platform requires you to be at least 18 years of age.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center;">
+                        <button id="btn-age-yes" class="btn btn-signin">Yes, I am 18+</button>
+                        <button id="btn-age-no" class="btn btn-secondary-hero">No, I am not</button>
+                    </div>
+                    <div id="age-error-message" class="error-message"
+                        style="display: none; color: #f43f5e; margin-top: 2rem; font-weight: 600;">
+                        <p><i class="fas fa-exclamation-circle"></i> Minimum age requirement not met.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FIRST MAIN PAGE -->
+        <section id="page-first-main" class="page">
+            <header class="nav-bar">
+                <a href="#" class="nav-brand">
+                    <div class="nav-brand-logo"><i class="fas fa-briefcase"></i></div>
+                    <span>QuickJob</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Jobs <i class="fas fa-chevron-down"
+                                style="font-size: 0.7em; margin-left: 4px;"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Category</a>
+                            <a href="#">Apply Job</a>
+                            <a href="#">Career</a>
+                        </div>
+                    </div>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <button id="btn-header-login" class="btn btn-signin">Sign In</button>
+                </nav>
+            </header>
+
+            <div class="hero-wrapper">
+                <div class="hero-left">
+                    <div class="version-badge animate-up">Version 1.0 • Now Live</div>
+                    <h1 class="hero-title animate-up delay-1">Work & Hire <br><span>Instantly.</span></h1>
+                    <p class="hero-subtitle animate-up delay-2">
+                        Connecting local talent with immediate opportunities. <br>
+                        Simple, fast, and secure for everyone.
+                    </p>
+                    <div class="hero-btns animate-up delay-2">
+                        <button id="btn-get-started" class="btn btn-primary-hero">Get Started Now</button>
+                        <button class="btn btn-secondary-hero">Learn More</button>
+                    </div>
+                    <div class="hero-stats animate-up delay-2">
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Active Jobs</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1.2k</h3>
+                            <p>Workers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Fast</h3>
+                            <p>Hiring</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="floating-card card-1 animate-up">
+                        <div class="card-icon-box">
+                            <i class="fas fa-helmet-safety"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>Plumber needed</h4>
+                            <p>$25/hr • 2 miles away</p>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2 animate-up delay-1">
+                        <div class="card-icon-box orange">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4>House Cleaning</h4>
+                            <p>Completed • <span class="card-rating"><i class="fas fa-star"></i> 5.0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="how-it-works-scroll animate-up">
+                <div class="scroll-content-wrapper">
+                    <h2 class="section-title">How it Works</h2>
+                    <div class="steps-grid">
+                        <div class="step-card">
+                            <div class="step-icon"><i class="fas fa-user-gear"></i></div>
+                            <h3>For Workers</h3>
+                            <p>Discover high-quality work opportunities, set your rates, and get paid securely.
+                                Perfect for students and skilled hands.</p>
+                            <button class="btn btn-signin mt-4" style="margin-top: 2rem;">Explore Roles</button>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-icon"><i class="fas fa-building-user"></i></div>
+                            <h3>For Employers</h3>
+                            <p>Find reliable, verified talent for your projects. Post jobs in minutes and manage
+                                everything from a single dashboard.</p>
+                            <button class="btn btn-signin mt-4" style="margin-top: 2rem;">Post a Task</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="landing-footer">
+                <p>&copy; 2026 QuickJob Inc. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#" style="color: var(--text-gray); text-decoration: none;">Privacy</a>
+                    <a href="#" style="color: var(--text-gray); text-decoration: none;">Terms</a>
+                </div>
+            </footer>
+        </section>
+
+        <!-- SECOND PAGE: Login / Signup Choice -->
+        <section id="page-login-signup-choice" class="page">
+            <div class="btn-back-wrap" onclick="showPage('page-first-main')" style="cursor: pointer;">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="auth-container">
+                <div class="glass-card animate-up">
+                    <i class="fas fa-shield-halved fa-4x mb-4" style="color: var(--primary-bright);"></i>
+                    <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem;">Join QuickJob</h1>
+                    <p class="hero-subtitle mb-4">Start your journey with the fastest growing work network.</p>
+                    <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <button id="btn-go-login" class="btn btn-primary-hero"
+                            style="width: 100%; justify-content: center;">Login to Account</button>
+                        <button id="btn-go-signup" class="btn btn-secondary-hero"
+                            style="width: 100%; justify-content: center;">Create New Account</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SIGNUP PAGE -->
+        <section id="page-signup" class="page scrollable">
+            <div class="auth-container">
+                <div class="glass-card animate-up">
+                    <div class="btn-back-wrap" onclick="showPage('page-login-signup-choice')"
+                        style="top: 1.5rem; left: 1.5rem; cursor: pointer;">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <h2 class="mb-4">Create Your Profile</h2>
+                    <form id="form-signup" class="form">
+                        <div class="profile-upload-container">
+                            <label for="profile-photo" class="profile-label">
+                                <div class="profile-preview" id="profile-preview"
+                                    style="width: 100px; height: 100px; border-radius: 50%; border: 2px dashed var(--border-color); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; margin: 0 auto 1.5rem;">
+                                    <i class="fas fa-camera fa-xl"></i>
+                                    <span style="font-size: 0.8rem; margin-top: 0.3rem;">Add Photo</span>
+                                </div>
+                                <input type="file" id="profile-photo" accept="image/*" hidden>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="signup-username" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" id="signup-email" placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" id="signup-password" placeholder="Min. 8 characters"
+                                    minlength="8" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm</label>
+                                <input type="password" id="signup-confirm-password" placeholder="Confirm password"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="date" id="signup-dob" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>I want to...</label>
+                            <div class="radio-group" style="display: flex; gap: 2rem; margin-top: 0.5rem;">
+                                <label class="radio-label"
+                                    style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="radio" name="user-type" value="labour" checked> Find Work
+                                </label>
+                                <label class="radio-label"
+                                    style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="radio" name="user-type" value="provider"> Provide Jobs
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary-hero mt-4"
+                            style="width: 100%; justify-content: center;">Complete Registration</button>
+
+                        <p class="form-footer">
+                            Already a member? <a href="#" id="link-to-login">Log In</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOGIN PAGE -->
+        <section id="page-login" class="page">
+            <div class="auth-container">
+                <div class="glass-card animate-up card-sm">
+                    <div class="btn-back-wrap" onclick="showPage('page-login-signup-choice')"
+                        style="top: 1.5rem; left: 1.5rem; cursor: pointer;">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <h2 class="mb-4">Welcome Back</h2>
+                    <form id="form-login" class="form">
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" id="login-email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" id="login-password" placeholder="Enter your password" minlength="8"
+                                required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary-hero mt-4"
+                            style="width: 100%; justify-content: center;">Secure Login</button>
+
+                        <p class="form-footer">
+                            New to QuickJob? <a href="#" id="link-to-signup">Create Account</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN DASHBOARD -->
+        <section id="page-dashboard" class="page scrollable">
+            <nav class="dashboard-nav">
+                <div class="nav-left">
+                    <button id="btn-menu" class="icon-btn" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+                    <span class="nav-brand" style="margin-left: 1rem;">QuickJob</span>
+                </div>
+                <div class="nav-right">
+                    <button class="icon-btn" aria-label="Notifications"><i class="fas fa-bell"></i></button>
+                    <div id="user-profile-trigger" class="profile-trigger">
+                        <img src="https://ui-avatars.com/api/?name=User&background=6366f1&color=fff" alt="User"
+                            id="nav-profile-img" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </nav>
+
+            <div id="side-menu" class="side-menu">
+                <div class="menu-overlay"></div>
+                <div class="menu-content">
+                    <div class="menu-header"
+                        style="text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 2rem;">
+                        <img src="https://ui-avatars.com/api/?name=User&background=6366f1&color=fff" alt="User"
+                            id="menu-profile-img"
+                            style="width: 80px; height: 80px; border-radius: 50%; border: 3px solid var(--primary-bright); margin: 0 auto 1rem;">
+                        <h3 id="menu-username">User Name</h3>
+                    </div>
+                    <ul class="nav-links"
+                        style="display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; padding: 2rem 0; list-style: none;">
+                        <li><a href="#" style="font-size: 1.1rem; color: var(--text-gray); text-decoration: none;"><i
+                                    class="fas fa-house"></i> Overview</a></li>
+                        <li id="menu-dynamic-action"><a href="#"
+                                style="font-size: 1.1rem; color: var(--text-gray); text-decoration: none;"><i
+                                    class="fas fa-briefcase"></i> Browse Jobs</a></li>
+                        <li><a href="#" id="btn-logout"
+                                style="color: #f43f5e; font-size: 1.1rem; text-decoration: none;"><i
+                                    class="fas fa-right-from-bracket"></i> Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <main class="dashboard-content">
+                <div class="animate-up">
+                    <h1 style="font-size: 2.8rem; font-weight: 800;">Hello, <span id="welcome-name"
+                            style="background: linear-gradient(to right, #6366f1, #0ea5e9); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">User</span>!
+                    </h1>
+                    <p id="role-tagline" style="font-size: 1.2rem; color: var(--text-gray);">Your personalized workspace
+                        is ready.</p>
+                </div>
+
+                <div class="action-grid mt-4 animate-up delay-1" style="margin-top: 3rem;">
+                    <div id="dynamic-main-card" class="action-card">
+                        <div class="card-icon-box"
+                            style="width: 64px; height: 64px; font-size: 2rem; margin-bottom: 1rem;">
+                            <i id="dynamic-icon" class="fas fa-magnifying-glass"></i>
+                        </div>
+                        <h3 id="dynamic-title" style="font-size: 1.8rem; margin-bottom: 0.5rem;">Find Your Next Gig</h3>
+                        <p id="dynamic-desc" style="color: var(--text-gray); font-size: 1.1rem; margin-bottom: 2rem;">
+                            Explore opportunities matching your skill set today.</p>
+                        <button id="btn-view-jobs" class="btn btn-primary-hero" style="width: fit-content;">View All
+                            Jobs</button>
+                    </div>
+
+                    <div class="stats-card">
+                        <h3>Quick Stats</h3>
+                        <div class="stat-row"
+                            style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+                            <span style="color: var(--text-gray);">Active Tasks</span>
+                            <span class="val"
+                                style="font-size: 1.5rem; font-weight: 800; color: var(--primary-bright);">0</span>
+                        </div>
+                        <div class="stat-row"
+                            style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color); margin-top: 1rem;">
+                            <span style="color: var(--text-gray);">Earnings</span>
+                            <span class="val"
+                                style="font-size: 1.5rem; font-weight: 800; color: var(--primary-bright);">$0</span>
+                        </div>
+                        <div class="stat-row"
+                            style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+                            <span style="color: var(--text-gray);">Rating</span>
+                            <span class="val"
+                                style="font-size: 1.5rem; font-weight: 800; color: var(--primary-bright);">5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- Profile Modal -->
+            <div id="profile-modal" class="modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content glass-card">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                        <h2>Account Settings</h2>
+                        <button id="btn-close-modal" class="icon-btn"><i class="fas fa-times"></i></button>
+                    </div>
+                    <form id="form-update-profile" class="form">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <img src="https://ui-avatars.com/api/?name=User&background=6366f1&color=fff"
+                                id="update-profile-preview"
+                                style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--primary-bright);">
+                        </div>
+                        <div class="form-group">
+                            <label>Display Name</label>
+                            <input type="text" id="update-username" required>
+                        </div>
+                        <input type="email" id="update-email" style="display: none;">
+                        <!-- Hidden but required by layout sync -->
+                        <button type="submit" class="btn btn-primary-hero"
+                            style="width: 100%; justify-content: center;">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Rating Modal -->
+            <div id="rating-modal" class="modal">
+                <div class="modal-overlay"></div>
+                <div class="modal-content glass-card" style="text-align: center;">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <button id="btn-close-rating" class="icon-btn"><i class="fas fa-times"></i></button>
+                    </div>
+                    <h2 class="mb-2">Rate Your Experience</h2>
+                    <p class="mb-4" style="color: var(--text-gray);">How was working with <span
+                            id="rating-target-name">John</span>?</p>
+
+                    <div class="star-rating mb-4" id="star-container">
+                        <i class="far fa-star star" data-value="1"></i>
+                        <i class="far fa-star star" data-value="2"></i>
+                        <i class="far fa-star star" data-value="3"></i>
+                        <i class="far fa-star star" data-value="4"></i>
+                        <i class="far fa-star star" data-value="5"></i>
+                    </div>
+                    <textarea placeholder="Write a review..."
+                        style="width: 100%; height: 100px; background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); border-radius: 12px; padding: 1rem; color: white; resize: none; margin-bottom: 1.5rem; font-family: inherit;"></textarea>
+
+                    <button id="btn-submit-rating" class="btn btn-primary-hero" style="width: 100%;">Submit
+                        Rating</button>
+                </div>
+            </div>
+
+            <div class="mt-4 animate-up delay-2" style="margin-top: 3rem;">
+                <h3 class="mb-2" style="font-size: 1.5rem; margin-bottom: 1rem;">Recent Activity</h3>
+                <div class="full-width-card">
+                    <div>
+                        <h4 id="rating-job-title" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Plumbing Repair</h4>
+                        <p id="rating-job-user" style="color: var(--text-gray);">Completed with: <span
+                                style="color: white; font-weight: 600;">John Doe</span></p>
+                    </div>
+                    <button id="btn-open-rating" class="btn btn-secondary-hero" style="padding: 0.8rem 1.5rem;">Rate
+                        User</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALL JOBS PAGE -->
+        <section id="page-all-jobs" class="page scrollable">
+            <nav class="dashboard-nav">
+                <div class="nav-left">
+                    <button class="icon-btn" onclick="showPage('page-dashboard')"><i
+                            class="fas fa-arrow-left"></i></button>
+                    <span class="nav-brand">Available Jobs</span>
+                </div>
+                <div class="nav-right">
+                    <div class="profile-trigger">
+                        <img src="https://ui-avatars.com/api/?name=User&background=6366f1&color=fff"
+                            class="nav-profile-img-ref" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </nav>
+            <main class="dashboard-content">
+                <div class="animate-up">
+                    <h2 class="mb-4">Latest Opportunities</h2>
+                    <div id="jobs-container" class="jobs-grid">
+                        <!-- Jobs will be injected here -->
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
